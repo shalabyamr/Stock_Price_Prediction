@@ -39,8 +39,8 @@ $ python src/main.py
 ## Results & Plots
 Below are the plots generated from the project's `results/` folder:
 
-| Predicted Price                                     | Prediction Trend                                        |
-|-----------------------------------------------------|---------------------------------------------------------|
+| Actual vs Predicted Price | Prediction Trend |
+|--------------------------|------------------|
 | ![Actual vs Predicted](results/DSV.TO_forecast.png) | ![Prediction Components](results/DSV.TO_components.png) |
 
 ---
@@ -56,11 +56,16 @@ The following table shows a preview of the generated forecast (from `results/DSV
 
 | Date       | Predicted Price |
 |------------|-----------------|
-| 2025‑01‑01 | 123.45          |
-| 2025‑01‑02 | 124.10          |
-| 2025‑01‑03 | 125.02          |
-
-> NOTE: These are sample placeholder values. To automatically generate and insert real forecast values from the CSV, see instructions in the README.
+| 2025-11-06 | 5.55 |
+| 2025-11-07 | 5.56 |
+| 2025-11-08 | 5.62 |
+| 2025-11-09 | 5.63 |
+| 2025-11-10 | 5.59 |
+| 2025-11-11 | 5.60 |
+| 2025-11-12 | 5.61 |
+| 2025-11-13 | 5.62 |
+| 2025-11-14 | 5.63 |
+| 2025-11-15 | 5.69 |
 
 ## Techniques Used
 - Machine learning / deep learning
