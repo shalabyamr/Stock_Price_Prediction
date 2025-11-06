@@ -41,18 +41,18 @@ Below are the plots generated from the project's `results/` folder:
 
 | Actual vs Predicted Price | Prediction Trend |
 |--------------------------|------------------|
-| ![Actual vs Predicted](results/DSV.TO_forecast.png) | ![Prediction Components](results/DSV.TO_components.png) |
+| ![Actual vs Predicted](results/AAPL_forecast.png) | ![Prediction Components](results/AAPL_components.png) |
 
 ---
 
 ## Explanation of Results
-The forecast plot (`DSV.TO_forecast.png`) shows the predicted stock price over time, with the model generating a future forecast based on historical data. The components plot (`DSV.TO_components.png`) visualizes how elements such as trend, seasonality, and residuals contribute to the final forecast.
+The forecast plot (`AAPL_forecast.png`) shows the predicted stock price over time, with the model generating a future forecast based on historical data. The components plot (`AAPL_components.png`) visualizes how elements such as trend, seasonality, and residuals contribute to the final forecast.
 
 - **Forecast Plot** – Displays historical prices and model‑predicted future prices.
 - **Components Plot** – Breaks down the prediction into individual statistical components that influence the forecast.
 
 ## Sample Output
-The following table shows a preview of the generated forecast (from `results/DSV.TO_forecast.csv`). Replace with the actual CSV content if needed.
+The following table shows a preview of the generated forecast (from `results/AAPL_forecast.csv`). Replace with the actual CSV content if needed.
 
 | Date       | Predicted Price |
 |------------|-----------------|

@@ -4,9 +4,9 @@ from prophet import Prophet
 import matplotlib.pyplot as plt
 
 # -----------------------------------------
-# 1. Download DSV.TO stock historical data
+# 1. Download Stock Price  historical data
 # -----------------------------------------
-ticker = input("Yahoo Finance Ticker: " ).strip().upper() #"DSV.TO"
+ticker = input("Yahoo Finance Ticker: " ).strip().upper()    #AAPL#
 df = yf.download(ticker, period="5y", interval="1d", auto_adjust=True)
 
 # Prepare data for Prophet
@@ -47,8 +47,8 @@ forecast[forecast['ds'] >= today][["ds", "yhat"]].to_csv(f"results/{ticker}_fore
 
 # Plot full forecast
 forecast = forecast[forecast["ds"] >= today]
-model.plot(forecast, xlabel="Date", ylabel="DSV STOCK PREDICTION", include_legend=True, plot_cap=True)
-plt.title(f"DSV.TO Stock Forecast ({forecast_period} days forward)")
+model.plot(forecast, xlabel="Date", ylabel=f"{ticker} STOCK PREDICTION", include_legend=True, plot_cap=True)
+plt.title(f"{ticker} Stock Forecast ({forecast_period} days forward)")
 plt.savefig(f"results/{ticker}_forecast.png")
 plt.show()
 # Plot trends/components (seasonality, trend strength, etc.)
